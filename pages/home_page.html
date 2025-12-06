@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <style>
+    .photo-container{
+      display: flex;
+      justify-content: center;
+      margin-top: 10rem;
+      margin-right: 30rem;
+      
+
+    }
+    .photo{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+
+      object-fit: cover;
+      border: 5px solid #D9C89B;
+    }
+    .profile-section{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 4rem;
+      padding: 0 2rem;
+    }
+    .profile-text{
+      max-width: 500px;
+
+    }
+    h2{
+      font-size: 32px;
+      margin-bottom: 1rem;
+      
+    }
+    .profile-text p{
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .btn{
+      padding: 0.8rem 1.6rem;
+      font-size: 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+    .btn-outline{
+      border:2px solid black;
+      
+    }
+    .profile-buttons{
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+    }
+    body{
+      background-color: #FBF9F5;
+    }
+
+  </style>
+  <body>
+    <div id="nav">
+
+    </div>
+    <div class="profile-section">
+      <img src="/images/neha.jpeg" class="photo" alt="profile photo">
+      <div class="profile-text">
+        <h2>Neha Kondabathini</h2>
+        <p>bfhdhcgncnmkguk,ukyttfrsgswxdawfrsgjykyuhgbwedrfghxcvb
+          fcvbn mfgvhbnm,rdftghjnmdxcfvb sdfgvbnerdfghjhvgfdzxc
+          szdxfcgvhjkjhfgdfsdsdfghjkjhgdfdsadfghjkhgxcxzdfghnmoiuhgffdx
+
+        </p>
+        <div class="profile-buttons" >
+          <a href="portfolio_page.html" class="btn btn-outline"> Profile</a>
+          <a href="contact_page.html" class="btn btn-outline"> Contact</a>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  </body>
+  <script>
+    fetch("nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav").innerHTML = data;
+    });
+
+
+  </script>
+
+</html>
