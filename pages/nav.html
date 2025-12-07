@@ -49,17 +49,39 @@
     font-family: 'Playfair Display', serif;
 
   }
-  .github-image{
+  .image-icon{
     width: 30px;
-    height:px;
+    height:30px;
+    object-fit: contain;
     
+
+  }
+  .image-icon:hover{
+    filter: brightness(0) saturate(100%) invert(79%) sepia(6%) saturate(502%) hue-rotate(39deg) brightness(93%) contrast(86%); 
+  }
+  .links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    padding: 1rem 2rem 0 2rem;
+
 
   }
 </style>
 <body>
-  <img src="/images/github.jpeg" class="github-image">
-  <img src="/images/gmail.jpeg" class="github-image">
-  <img src="/images/linkedin.jpeg" class="github-image">
+  <div class="links">
+    <a href="https://github.com/bcdfgi/Portfolio-Website" target="-blank">
+      <img src="/images/github.jpeg" class="image-icon" alt="Github">
+    </a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="-blank">
+      <img src="/images/gmail.jpeg" class="image-icon" alt="Gmail">
+    </a>
+    <a href="https://www.linkedin.com/in/neha-kondabathini-9964b6231/" target="-blank">
+      <img src="/images/linkedin.jpeg" class="image-icon" alt="linkedin">
+    </a>
+
+  </div>
+  
   <h1>Neha Kondabathini</h1>
   <nav class="nav-bar">
     <a href="home_page.html">Home</a>
