@@ -52,12 +52,14 @@
   .image-icon{
     width: 30px;
     height:30px;
-    object-fit: contain;
+    fill: #2A2A2A;
+    transition: fill 0.3s ease;
     
 
   }
   .image-icon:hover{
-    filter: brightness(0) saturate(100%) invert(79%) sepia(6%) saturate(502%) hue-rotate(39deg) brightness(93%) contrast(86%); 
+    fill: #BFCDB4;
+    
   }
   .links{
     display: flex;
@@ -71,13 +73,36 @@
 <body>
   <div class="links">
     <a href="https://github.com/bcdfgi/Portfolio-Website" target="-blank">
-      <img src="/images/github.jpeg" class="image-icon" alt="Github">
+      <svg class="image-icon" viewBox="0 0 24 24">
+      <path d="M12 0.3C5.37 0.3 0 5.67 0 12.3c0 5.28 3.44 9.76 8.2 11.34
+               0.6 0.1 0.82-0.26 0.82-0.58v-2.03c-3.34 0.73-4.04-1.61-4.04-1.61
+               -0.55-1.39-1.34-1.76-1.34-1.76 -1.1-0.75 0.08-0.73 0.08-0.73
+               1.22 0.09 1.87 1.26 1.87 1.26 1.08 1.86 2.84 1.32 3.53 1.01
+               0.1-0.78 0.42-1.32 0.76-1.62 -2.67-0.3-5.47-1.34-5.47-5.96
+               0-1.32 0.47-2.39 1.24-3.23 -0.13-0.3-0.54-1.52 0.12-3.16
+               0 0 1.01-0.32 3.3 1.23 0.96-0.27 2-0.41 3.03-0.41 1.03 0 2.07 0.14 3.03 0.41
+               2.28-1.55 3.29-1.23 3.29-1.23 0.66 1.64 0.25 2.86 0.12 3.16
+               0.77 0.84 1.23 1.91 1.23 3.23 0 4.63-2.81 5.66-5.49 5.96
+               0.43 0.37 0.81 1.1 0.81 2.22v3.29c0 0.32 0.21 0.69 0.82 0.58
+               C20.56 22.06 24 17.58 24 12.3 24 5.67 18.63 0.3 12 0.3z"/>
+    </svg>
+
     </a>
     <a href="https://mail.google.com/mail/u/0/#inbox" target="-blank">
-      <img src="/images/gmail.jpeg" class="image-icon" alt="Gmail">
+      <svg class="image-icon" viewBox="0 0 24 24">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+               c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5
+               8-5v2z"/>
+    </svg>
     </a>
     <a href="https://www.linkedin.com/in/neha-kondabathini-9964b6231/" target="-blank">
-      <img src="/images/linkedin.jpeg" class="image-icon" alt="linkedin">
+      <svg class="image-icon" viewBox="0 0 24 24">
+      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5
+               1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1
+               c.67-1.27 2.3-2.6 4.74-2.6 5.07 0 6 3.34 6 7.7V24h-5V16c0-1.9-.03-4.34-2.64-4.34
+               -2.64 0-3.04 2.06-3.04 4.2V24h-5V8z"/>
+    </svg>
+
     </a>
 
   </div>
