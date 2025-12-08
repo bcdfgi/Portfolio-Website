@@ -1,4 +1,4 @@
-const conf = require('dotenv').config();
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const path = require('path');
@@ -6,7 +6,13 @@ const app = express();
 const PORT=3000;
 
 app.use(express.urlencoded({ extended:true }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'pages')));
+app.use(express.static(path.join(__dirname, 'images')));
+
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'home_page.html'));
+});
+
 
 app.post('/contact', async (req, res) => {
   const { name, email, message} = req.body;
