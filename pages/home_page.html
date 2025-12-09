@@ -10,7 +10,8 @@
       --text: #171717; 
       --accent: #0077B6; 
       --border: #A9A9A9; 
-      --secondary-bg: #EAEAEA; 
+      --secondary-bg: #EAEAEA;
+      --background-alt:#F8F8F8;
     }
 
     .photo-container{
@@ -70,6 +71,8 @@
     body{
       background-color: var(--bg);
       color: var(--text);
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
     .btn:hover{
      
@@ -160,26 +163,92 @@
     html{
       scroll-behavior: smooth;
     }
+    .container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .section-padding{
+      padding: 6rem 0;
+    }
+    .background-alt{
+      background-color: var(--bac);
+
+    }
+    .section-title{
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 3rem;
+      color:var(--text);
+
+    }
+    .hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text .greeting {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.hero-text h2 {
+    font-size: 4em;
+    margin: 0;
+    line-height: 1;
+}
+
+.hero-text .tagline {
+    font-size: 1.5em;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.hero-text .bio {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-actions .btn {
+    margin-right: 15px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
   </style>
   <body>
     <div id="nav">
 
     </div>
-    <div class="profile-section">
-      <img src="/neha.jpeg" class="photo" alt="profile photo">
-      <div class="profile-text">
-        <h2>Hello! I'am Neha Kondabathini</h2>
-        <p> A driven IT graduate looking forword to create inclusive and modern digital solutions.
-          I focus on following clean code writing, creating intuitive interfaces and learning new technologies
-          that enhance user experience.
-          Open to internships, junior development postions and joint projects.
-        </p>
-        <div class="profile-buttons" >
-          <a href="portfolio_page.html" class="btn btn-outline"> Portfolio</a>
-          <a href="#contact" class="btn btn-outline"> Contact</a>
+    <section id="about" class="hero section-padding">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="greeting">Hello World, I'm</p>
+                <h2>Neha Kondabathini</h2>
+                <h3 class="tagline"> </h3>
+                <p class="bio"></p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary-btn">Portfolio</a>
+                    <a href="#contact" class="btn secondary-btn">Contact</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/300" alt="Professional Headshot of [Your Name]">
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
+    <div></div>
+
+
+
+
     <div class="contact-section" id="contact">
       <h2>Contact me</h2>
       <form class="contact-form"  action="/contact" method="POST">
