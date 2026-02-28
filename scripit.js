@@ -7,27 +7,7 @@ function initPortfolio() {
     }
 
     // 2. Simple Contact Form Submission Handler
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // *** IMPORTANT: This is a frontend simulation only. ***
-            // For a production website, you need a backend service (like Netlify Forms,
-            // Formspree, or a custom API endpoint) to actually receive the email.
-
-            formStatus.textContent = 'Message Sent! Thank you for reaching out (simulated).';
-            formStatus.style.color = 'var(--primary-color)';
-            contactForm.reset();
-            
-            // Revert status message after 5 seconds
-            setTimeout(() => {
-                formStatus.textContent = '';
-            }, 5000);
-        });
-    }
+    
 
     // 3. Navigation Highlighting/Active State
     const navLinks = document.querySelectorAll('.nav-link');

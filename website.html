@@ -14,8 +14,8 @@
             <h1 class="logo">Neha Kondabathini<span>.dev</span></h1>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/neha-kondabathini-9964b6231/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/bcdfgi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:nehakondabathini1234@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <nav id="main-nav">
                 <a href="#about" class="nav-link">About</a>
@@ -42,9 +42,9 @@
                     <a href="#contact" class="btn secondary-btn">Contact</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/300" alt="Professional Headshot of [Your Name]">
-            </div>
+            <!--<div class="hero-image">
+                <img src="images/neha.jpeg" alt="Professional Headshot of Neha">
+            </div> -->
         </div>
     </section>
 
@@ -55,8 +55,6 @@
                 <div class="skill-group">
                     <h3><i class="fas fa-desktop"></i> Frontend</h3>
                     <ul>
-                        <li>React & Redux</li>
-                        <li>Vue.js & Svelte</li>
                         <li>JavaScript (ES6+)</li>
                         <li>HTML5, CSS3, SCSS</li>
                         <li>Responsive Design</li>
@@ -65,21 +63,15 @@
                 <div class="skill-group">
                     <h3><i class="fas fa-server"></i> Backend</h3>
                     <ul>
-                        <li>Node.js & Express</li>
-                        <li>Python & Django/Flask</li>
-                        <li>RESTful APIs / GraphQL</li>
-                        <li>Authentication (JWT, OAuth)</li>
-                        <li>Serverless (AWS Lambda)</li>
+                        
                     </ul>
                 </div>
                 <div class="skill-group">
                     <h3><i class="fas fa-database"></i> Database & Tools</h3>
                     <ul>
-                        <li>MongoDB, PostgreSQL</li>
+                        <li>MongoDB</li>
                         <li>Git & GitHub/GitLab</li>
-                        <li>Docker & Kubernetes</li>
-                        <li>CI/CD (Jenkins, GitHub Actions)</li>
-                        <li>Unit Testing (Jest, Mocha)</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -95,7 +87,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Bachelor of Information Technology <span class="company">@ University of South Australia</span></h3>
-                        <span class="date">Feb 2024– Dec 2025</span>
+                        <span class="date">Feb 2022– Dec 2025</span>
                         <ul>
                            
                             
@@ -112,18 +104,19 @@
             <h2 class="section-title">Showcase of Work</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=Project+1+Image" alt="Project 1 Thumbnail">
-                    <h3>E-commerce Platform API</h3>
+                    <img src="images/Wordle.png" alt="Project 1 Thumbnail">
+                    <h3>Wordle Game</h3>
                     <p>A high-performance backend API built with Node.js and Express, utilizing MongoDB for data persistence and Redis for caching.</p>
                     <span class="tags">Node.js | Express | MongoDB | Redis</span>
                     <div class="links">
-                        <a href="[Live Demo Link]" target="_blank"><i class="fas fa-link"></i> Live Demo</a>
-                        <a href="[GitHub Repo Link]" target="_blank"><i class="fab fa-github"></i> Code</a>
+
+                        <a href="https://github.com/bcdfgi/Wordle" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://wordle-livid-zeta.vercel.app/Wordle.htm" target="_blank"><i class="fas fa-link"></i> Live Demo</a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250?text=Project+2+Image" alt="Project 2 Thumbnail">
+                <!-- <div class="project-card">
+                    <img src="images/game2.jpeg" alt="Project 2 Thumbnail">
                     <h3>Real-Time Chat App</h3>
                     <p>A responsive, single-page chat application leveraging React for the frontend and WebSockets for instant messaging.</p>
                     <span class="tags">React | WebSockets | CSS Grid</span>
@@ -131,7 +124,8 @@
                         <a href="[Live Demo Link]" target="_blank"><i class="fas fa-link"></i> Live Demo</a>
                         <a href="[GitHub Repo Link]" target="_blank"><i class="fab fa-github"></i> Code</a>
                     </div>
-                </div>
+                </div> -->
+                
                 
                 
                 </div>
@@ -140,14 +134,13 @@
 
     <section id="contact" class="section-padding background-alt">
         <div class="container">
-            <h2 class="section-title">Ready to Collaborate?</h2>
+            <h2 class="section-title">Contact</h2>
             <p class="contact-pitch">I am currently open to exciting Web Development opportunities.</p>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Professional Email" required>
-                <textarea id="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <form id="contact-form" action="https://formspree.io/f/xovgnydr" method="POST">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="email" name="_replyto" id="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
                 <button type="submit" class="btn primary-btn large-btn">Send Message</button>
-                <p id="form-status"></p>
             </form>
             
         </div>
@@ -159,6 +152,6 @@
         </div>
     </footer>
 
-    <script src="server.js"></script>
+    <script src="scripit.js"></script>
 </body>
 </html>
