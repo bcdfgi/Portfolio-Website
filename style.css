@@ -479,3 +479,27 @@ footer {
         font-size: 3em;
     }
 }
+
+
+.resume-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: 2px solid #2e7d32;
+}
+
+.resume-btn:hover {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume-btn i {
+    margin-right: 8px;
+}
+
+
+.resume-nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 700 !important;
+}
